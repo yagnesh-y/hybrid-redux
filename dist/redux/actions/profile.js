@@ -9,17 +9,17 @@ var _axios = require("axios");
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _utils = require("../utils");
-
 var _Profile = require("../constants/Profile.constants");
 
 var _Profile2 = _interopRequireDefault(_Profile);
 
-var _apiSdk = require("../../api-sdk");
+var _userProfile = require("../../api-sdk/user-profile");
 
-var _apiSdk2 = _interopRequireDefault(_apiSdk);
+var _userProfile2 = _interopRequireDefault(_userProfile);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import { getErrorCodeMapping } from "../utils";
 
 var getProfileLoading = function getProfileLoading() {
   return {
@@ -43,7 +43,7 @@ var getProfileFailure = function getProfileFailure() {
 
 var getProfile = exports.getProfile = function getProfile() {
   dispatch(getProfileLoading());
-  return _apiSdk2.default.getProfile().then(function (response) {
+  return _userProfile2.default.getProfile().then(function (response) {
     // if (response.status.toUpperCase() === RESPONSE_CODES.SUCCESS) {
     dispatch(getProfileSuccess({ data: response }));
     return response;
