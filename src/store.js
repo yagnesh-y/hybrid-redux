@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension"; // eslint-disable-line
 import logger from "redux-logger";
 
-import reducer from "./src/reducers";
+import reducer from "./reducers";
 // import actions from "./actions";
 // import constants from "./constants";
 
