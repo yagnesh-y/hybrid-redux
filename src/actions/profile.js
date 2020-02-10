@@ -2,7 +2,7 @@ import axios from "axios";
 // import { getErrorCodeMapping } from "../utils";
 
 import constants from "../constants/profile";
-import UserProfileClient from "../../api-sdk/user-profile";
+import UserProfileClient from "../api-sdk/user-profile";
 
 const getProfileLoading = () => ({
   type: constants.GET_PROFILE_LOADING
@@ -17,7 +17,7 @@ const getProfileFailure = () => ({
   type: constants.GET_PROFILE_FAILURE
 });
 
-export const getProfile = () => {
+export const getProfile = () => dispatch => {
   dispatch(getProfileLoading());
   return UserProfileClient.getProfile()
     .then(response => {

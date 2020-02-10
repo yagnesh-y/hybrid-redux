@@ -1,1 +1,5 @@
-export { default as UserProfileClient } from './user-profile';
+import userProfile from "./user-profile";
+
+export default {
+  userProfile
+};

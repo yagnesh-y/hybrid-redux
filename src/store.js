@@ -3,7 +3,7 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension"; // eslint-disable-line
 import logger from "redux-logger";
 
-import reducer from "./reducers";
+import reducer from "./src/reducers";
 // import actions from "./actions";
 // import constants from "./constants";
 
@@ -14,8 +14,4 @@ const store = createStore(
   composeWithDevTools(applyMiddleware(...middlewares))
 );
 
-export default {
-  store
-  // actions,
-  // constants
-};
+export default store;
