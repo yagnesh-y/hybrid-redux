@@ -1,0 +1,14 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+exports.default = {
+	GET_PROFILE_LOADING: "profile/GET_PROFILE_LOADING",
+	GET_PROFILE_SUCCESS: "profile/GET_PROFILE_SUCCESS",
+	GET_PROFILE_FAILURE: "profile/GET_PROFILE_FAILURE",
+
+	UPDATE_PROFILE_LOADING: "profile/UPDATE_PROFILE_LOADING",
+	UPDATE_PROFILE_SUCCESS: "profile/UPDATE_PROFILE_SUCCESS",
+	UPDATE_PROFILE_FAILURE: "profile/UPDATE_PROFILE_FAILURE"
+};
