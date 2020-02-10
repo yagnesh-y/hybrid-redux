@@ -1,5 +1,5 @@
 // expose whatever to the outside world(npm package users);
 
-import redux from "./redux";
+import store from "./store";
 
-export default redux;
+export default store;

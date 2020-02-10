@@ -1,7 +1,7 @@
 import axios from "axios";
 // import { getErrorCodeMapping } from "../utils";
 
-import constants from "../constants/Profile.constants";
+import constants from "../constants/profile";
 import UserProfileClient from "../../api-sdk/user-profile";
 
 const getProfileLoading = () => ({
