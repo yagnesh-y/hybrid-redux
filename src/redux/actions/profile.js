@@ -1,8 +1,8 @@
 import axios from "axios";
-import { getErrorCodeMapping } from "../utils";
+// import { getErrorCodeMapping } from "../utils";
 
 import constants from "../constants/Profile.constants";
-import UserProfileClient from "../../api-sdk";
+import UserProfileClient from "../../api-sdk/user-profile";
 
 const getProfileLoading = () => ({
   type: constants.GET_PROFILE_LOADING

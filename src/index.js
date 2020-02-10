@@ -2,6 +2,4 @@
 
 import redux from "./redux";
 
-export default {
-  redux
-};
+export default redux;
