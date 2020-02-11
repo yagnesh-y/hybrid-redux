@@ -1,6 +1,6 @@
 {
   "name": "hybrid-shared-redux",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "shared redux for web and mobile apps",
   "main": "dist",
   "scripts": {

@@ -4,8 +4,6 @@ import { composeWithDevTools } from "redux-devtools-extension"; // eslint-disabl
 import logger from "redux-logger";
 
 import reducer from "./reducers";
-// import actions from "./actions";
-// import constants from "./constants";
 
 const devLogger = true ? logger : null;
 const middlewares = [thunk, devLogger].filter(item => item);
